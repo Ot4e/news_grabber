@@ -84,8 +84,8 @@ def main():
         info = get_page_content(link)
         top_news.append(info)
 
-    with open("www-news-com.json", "wt") as f:
-        json.dump(top_news, f,)
+    with open("www-gx-net-ua.json", "wt", encoding="utf-8") as f:
+        json.dump(top_news, f, ensure_ascii=False)
     print("Работа завершена")
     
 
